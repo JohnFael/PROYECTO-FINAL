@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/LOGOT.png">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="index.html">Casa</a>
+            <a href="menu.html">Menú</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="contacto.html">Contactos</a>
+        </nav>
+    </header>
+    
+    <section id="reservas" class="container">
+        <h2 class="text-center my-4">Reservar</h2>
+        <form id="formReservar" class="needs-validation" novalidate>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <div class="invalid-feedback">Por favor, ingresa tu apellido.</div>
+                    <label for="apellido" class="form-label">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="invalid-feedback">Por favor, ingresa tu teléfono.</div>
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" required>
+            </div>
+            <div class="mb-3">
+                <div class="invalid-feedback">Por favor, ingresa tu email.</div>
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <div class="invalid-feedback">Por favor, ingresa el plato a reservar.</div>
+                <label for="plato" class="form-label">Plato a Reservar:</label>
+                <input type="text" class="form-control" id="plato" required>
+            </div>
+            <div class="mb-3">
+                <div class="invalid-feedback">Por favor, ingresa una fecha.</div>
+                <label for="fecha" class="form-label">Fecha:</label>
+                <input type="date" class="form-control" id="fecha" required>
+            </div>
+            <div class="mb-3">
+                <div class="invalid-feedback">Por favor, ingresa la hora de la reserva.</div>
+                <label for="hora" class="form-label">Hora:</label>
+                <input type="time" class="form-control" id="hora" required>
+            </div>
+            <div class="mb-3">
+                <div class="invalid-feedback">Por favor, ingresa el número de personas.</div>
+                <label for="personas" class="form-label">Número de Personas:</label>
+                <input type="number" class="form-control" id="personas" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Reservar</button>
+        </form>
+    </section>
+</body>
+</html>

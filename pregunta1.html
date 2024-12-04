@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>pregunta1</title>'
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: cadetblue;
+        }
+        .container {
+            margin: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: auto;
+            background-color: rgb(14, 100, 103);
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+            align-items: center;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <h2>generar numeros aleatorios</h2>
+    <div id="resultado" class="container"></div>
+    
+    <script>
+        function prim(num) {
+            if (num <= 1) return false;
+            if (num <= 3) return true;
+            if (num % 2 === 0 || num % 3 === 0) return false;
+            for (let i = 5; i * i <= num; i += 6) {
+                if (num % i === 0 || num % (i + 2) === 0) return false;
+            }
+            return true;
+        }
+        
+        function generarNumeros() {
+            var cantidad = prompt("Ingrese la cantidad de números:");
+            var primos = [];
+            var noPrimos = [];
+            for (let i = 0; i < cantidad; i++) {
+                const numeroAleatorio = Math.floor(Math.random() * 900) + 100;
+                if (prim(numeroAleatorio)) {
+                    primos.push(numeroAleatorio);
+                } else {
+                    noPrimos.push(numeroAleatorio);
+                }
+            }
+            /*5document.getElementById('#resultado').innerHTML = NO SIRVEEE 
+            `
+            <p>numeors generados: <b>${noPrimos.join(', ')}</b></p>
+            <p>numeros que son primos: <b>${primos.join(', ')}</b></p>   
+            `;*/
+            document.querySelector('#resultado').innerHTML = `
+            <p>numeors generados: <b>${noPrimos.join(', ')}</b></p>
+            <p>numeros que son primos: <b>${primos.join(', ')}</b></p>
+            `;
+            
+        }
+        generarNumeros()
+        </script>
+</body>
+</html>

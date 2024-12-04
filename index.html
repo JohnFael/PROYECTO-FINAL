@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/LOGOT.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+
+<body background="img/fondob.avif">
+    
+
+    <header>
+        <h2 class="logoimg">
+            <a href="#">
+                <img src="img/LOGOT.png" alt="LOGO" width="50" height="auto"> 
+            </a>
+        </h2>
+        
+        <nav class="navigation">
+            <a href="#">Casa</a>
+            <a href="menu.html">Menú</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="contacto.html">Contacos</a>
+            <button class="btnLogin-popup">Iniciar sesión</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+
+        <div class="form-box login">
+            <h2>Iniciar sesión</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Recordarme</label>
+                    <a href="#">Olvidé la contraseña</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>No tiene una cuenta? <a href="#" class="register-link">Registro</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register"> <!-- REGISTRARSE -->
+            <h2>Registro</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="text" required>
+                    <label>Usuario</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <label>Constraseña</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Acepto los términos y condiciones</label>
+                </div>
+                <button type="submit" class="btnreg">Registrar</button>
+                <div class="login-register">
+                    <p>Ya tengo una cuenta <a href="#" class="login-link">Iniciar sesión</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="carru">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/ensa.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ENSALADA CÉSAR</h5>
+              <p>Una ensalada fresca con lechuga romana, crutones, queso parmesano y un aderezo César casero.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hamburbur.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HAMBURGUESAS</h5>
+              <p>Ingredientes: Carne de Res, Lechuga, Tomate, Queso Cheddar, Pan</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/pasta.jpg" class="d-block w-100" alt="PASTA">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PASTA CARBONARA</h5>
+              <p>na deliciosa pasta hecha con huevo, queso pecorino, panceta y pimienta negra.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      
+      <br>
+      <p>
+          
+</p>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4d9b8524e2.js" crossorigin="anonymous"></script>
+</body>
+</html>
